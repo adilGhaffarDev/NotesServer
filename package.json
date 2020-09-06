@@ -10,7 +10,8 @@
     "build:ui": "rm -rf build && cd /Users/adilghaffar/Documents/FSD/Exercisee1/Practice/part2 && npm run build --prod && cp -r build Users/adilghaffar/Documents/FSD/PracticeEx3/",
     "deploy": "git push heroku master",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && npm run deploy",
-    "logs:prod": "heroku logs --tail"
+    "logs:prod": "heroku logs --tail",
+    "lint": "eslint ."
   },
   "proxy": "http://localhost:3001",
   "author": "Muhammad Adil Ghaffar",
@@ -22,6 +23,7 @@
     "mongoose": "^5.10.2"
   },
   "devDependencies": {
+    "eslint": "^7.8.1",
     "nodemon": "^2.0.4"
   }
 }
