@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWQiOiI1ZjU3NjU3NDRlY2FjZTQ4MDAwOGY0YjEiLCJpYXQiOjE1OTk1NjU3MTF9.56dpL124CngvKRqaXwoTWzLYYYe1AVMTifrQaKS-7sw
+
+{
+    "content": "new user note with auth",
+    "important": true
+}
